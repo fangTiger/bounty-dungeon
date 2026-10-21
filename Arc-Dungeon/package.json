@@ -1,0 +1,18 @@
+{
+  "name": "arc-rpg",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 5174 --bind 0.0.0.0 --directory apps/web",
+    "test": "node --test test/*.test.js",
+    "check": "node scripts/check.mjs",
+    "verify": "npm test && npm run check"
+  },
+  "dependencies": {
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.64.1"
+  }
+}

@@ -1,0 +1,7 @@
+/node_modules
+/dist
+.env*
+Arc-Dungeon/node_modules
+Arc-Dungeon/test-results
+contracts/out
+contracts/cache

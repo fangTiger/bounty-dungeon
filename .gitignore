@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.vercel/
+.env*
+!.env.example
+contracts/out/
+contracts/cache/
+lib/
+Arc-Dungeon/test-results/
+.DS_Store

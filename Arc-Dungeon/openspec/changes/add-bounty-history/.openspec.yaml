@@ -1,0 +1,6 @@
+id: add-bounty-history
+title: "Bounty History, Leaderboard & Player Profiles"
+status: done
+date: "2026-10-20"
+specs:
+  - specs/bounty-history/spec.md
