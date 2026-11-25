@@ -8,17 +8,35 @@
 
 ---
 
-## Try it in 2 minutes
+## 玩法
 
-**Without a wallet:** open the site. The game runs in the browser. The right-hand panel shows live open bounties, past bounties (**History**) and the **Hunters** leaderboard, all read from Arc mainnet.
+打开 [Bounty Dungeon](https://bounty-dungeon.vercel.app)，选择 **Continue as Guest**，按 `Enter` 进入游戏。游客可以探索地牢，也可以在右侧查看开放悬赏、**History**（历史记录）和 **Hunters**（猎人榜）。要发布悬赏、领奖或发起退款，请连接钱包并切到 **Arc 主网**，备好支付链上手续费的 USDC。
 
-**With a wallet (a little USDC on Arc mainnet):**
+### 挑战悬赏
 
-1. **Challenge a bounty.** Click **Challenge** on an open bounty. The game loads that bounty's seed. Score higher than the target, then click **Claim**. The bounty USDC goes to your wallet in the same transaction.
-2. **Post your own.** Click **Start bounty run** and play a run. When it ends, choose an amount (0.01–10 USDC) and click **Post bounty**. Your wallet asks you to approve the USDC, then to post. Your score becomes the target for the next 24 hours.
-3. **Share it.** Every bounty has a link (`/?bounty=<id>`) and a one-click post to X. Every player has a profile (`/?player=<address>`).
+1. 在 **Open bounties** 中选一条悬赏，查看目标分数、奖金和剩余时间，再点 **Challenge**。游戏会加载这条悬赏的地牢种子。
+2. 完成一局并拿到**严格高于**目标的分数。结算后，在右侧点 **Claim bounty**，等待服务端回放验分，再在钱包确认领取交易。
+3. 24 小时有效期内，首位成功领取的挑战者会收到合约托管的 USDC。
 
-Controls: WASD or arrow keys to move, J or Space to attack, K to dodge, U/I/O/P for skills, E to interact, L to switch language (EN/中文).
+### 发布悬赏
+
+1. 点 **Start bounty run** 开一局。结算后，在 **Your last run** 中确认成绩。
+2. 输入 **0.01–10 USDC**，点 **Post bounty**。如果钱包需要先授权 USDC，确认授权后继续确认发布交易。交易成功后，合约托管奖金，本局成绩成为挑战目标。
+3. 在悬赏卡上点 **Share**，把这条悬赏的挑战链接发给朋友。
+
+如果 24 小时内无人领取，任何已连接钱包的用户都可以点击 **Refund to poster**，奖金会退回发布者的钱包。
+
+**操作键**　`WASD` 或方向键移动，`J` 或空格攻击，`K` 闪避，`U`/`I`/`O`/`P` 施放技能，`E` 交互，`L` 切换中英文。
+
+### 实机截图
+
+| 入口与悬赏列表 | 地牢战斗 |
+| --- | --- |
+| [![游戏入口，右侧显示目标分数、奖金和 Challenge 按钮](docs/screenshots/bounty-board.png)](docs/screenshots/bounty-board.png) | [![地牢实战画面，显示小地图、技能栏和技能冷却](docs/screenshots/dungeon-combat.png)](docs/screenshots/dungeon-combat.png) |
+
+| 发布悬赏 | 悬赏历史 |
+| --- | --- |
+| [![结算后的发布面板，显示本局分数、USDC 金额和 Post bounty 按钮](docs/screenshots/post-bounty.png)](docs/screenshots/post-bounty.png) | [![History 标签页显示已领取和已退款的悬赏](docs/screenshots/bounty-history.png)](docs/screenshots/bounty-history.png) |
 
 ---
 
